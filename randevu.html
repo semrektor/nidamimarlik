@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Randevu Al | Nida Mimarlık</title>
+<meta name="description" content="Nida Mimarlık ile hafta içi 09:00-18:00 saatleri arasında randevu talebinde bulunun.">
+<link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&amp;family=Poppins:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="nav" id="siteNav">
+  <div class="nav__inner">
+    <a href="index.html" class="brand">
+      <svg class="brand__mark" viewBox="0 0 200 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M22 140 L100 10 L178 140" stroke-width="14"/>
+        <path d="M48 140 L100 42 L152 140" stroke-width="14"/>
+        <path d="M74 140 L100 74 L126 140" stroke-width="14"/>
+      </svg>
+      <span class="brand__word"><span class="brand__name">NİDA</span><span class="brand__sub">MİMARLIK</span></span>
+    </a>
+
+    <nav class="nav__links" aria-label="Ana menü">
+      <a href="index.html">Anasayfa</a>
+      <a href="hakkimizda.html">Hakkımızda</a>
+      <a href="hizmetler.html">Hizmetler</a>
+      <a href="projeler.html">Projeler</a>
+      <a href="iletisim.html">İletişim</a>
+      <a href="randevu.html">Randevu Al</a>
+    </nav>
+
+
+    <button class="nav__toggle" aria-label="Menüyü aç/kapat" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="nav__mobile">
+  <a href="index.html">Anasayfa</a>
+  <a href="hakkimizda.html">Hakkımızda</a>
+  <a href="hizmetler.html">Hizmetler</a>
+  <a href="projeler.html">Projeler</a>
+  <a href="iletisim.html">İletişim</a>
+  <a href="randevu.html">Randevu Al</a>
+  <span class="eyebrow">Nida Mimarlık</span>
+</div>
+
+<main>
+
+  <!-- PAGE HERO ======================================================= -->
+  <section class="page-hero page-hero--photo">
+    <div class="page-hero__media">
+      <img src="assets/img/randevu-hero.jpg" alt="Nida Mimarlık — zamanı simgeleyen pirinç heykel kompozisyonu" width="2200" height="1238">
+    </div>
+    <div class="container page-hero__inner">
+      <span class="eyebrow page-hero__kicker">Randevu Al</span>
+      <h1 class="page-hero__title">Bir Görüşme<br>Planlayalım</h1>
+      <p class="page-hero__lede">Hafta içi 09:00&ndash;18:00 saatleri arasında, size uygun bir gün ve saat seçin — ekibimiz talebinizi değerlendirip size dönüş yapsın.</p>
+      <div class="breadcrumb">
+        <a href="index.html">Anasayfa</a><span>/</span>Randevu Al
+      </div>
+    </div>
+  </section>
+
+  <!-- INTRO ============================================================ -->
+  <section class="section-pad bg-cream" style="padding-bottom:0">
+    <div class="container">
+      <div class="split reveal">
+        <div>
+          <span class="eyebrow">Nasıl İşliyor</span>
+          <h2 class="section-title" style="font-size:clamp(1.7rem,3vw,2.2rem)">Kısa Bir Görüşme,<br>Net Bir Yol Haritası</h2>
+          <p class="section-lede" style="max-width:48ch">Projenizi kısaca dinleyip kapsamı birlikte netleştirdiğimiz, hafta içi 09:00&ndash;18:00 saatleri arasında planlanan kısa bir ön görüşme. Aşağıdan size uygun bir gün ve saat seçmeniz yeterli.</p>
+          <div class="tag-list" style="margin-top:28px">
+            <span class="tag">Hafta İçi</span>
+            <span class="tag">09:00&ndash;18:00</span>
+            <span class="tag">Ücretsiz Ön Görüşme</span>
+          </div>
+        </div>
+        <div class="split__media">
+          <div class="split__media-frame"></div>
+          <img src="assets/img/randevu-detay.jpg" alt="Nida Mimarlık — planlama ve zaman kompozisyonu" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING ========================================================== -->
+  <section class="section-pad bg-cream">
+    <div class="container">
+      <div class="rdv-layout reveal">
+
+        <div class="rdv-book">
+          <span class="eyebrow">Uygunluk Seçin</span>
+          <h2 class="section-title" style="font-size:clamp(1.7rem,3vw,2.2rem)">Tarih ve Saat</h2>
+          <p class="section-lede" style="max-width:48ch">Yalnızca hafta içi günler (Pazartesi&ndash;Cuma) ve 09:00&ndash;17:00 arası başlangıç saatleri seçilebilir.</p>
+
+          <div class="rdv-calendar">
+            <div class="rdv-calendar__head">
+              <button type="button" class="rdv-nav" id="rdvPrev" aria-label="Önceki ay">&#8249;</button>
+              <span class="rdv-calendar__label" id="rdvMonthLabel"></span>
+              <button type="button" class="rdv-nav" id="rdvNext" aria-label="Sonraki ay">&#8250;</button>
+            </div>
+            <div class="rdv-calendar__weekdays">
+              <span>Pzt</span><span>Sal</span><span>Çar</span><span>Per</span><span>Cum</span><span>Cmt</span><span>Paz</span>
+            </div>
+            <div class="rdv-calendar__grid" id="rdvGrid"></div>
+            <div class="rdv-calendar__legend">
+              <span><i style="background:var(--gold)"></i>Seçili gün</span>
+              <span><i style="background:rgba(19,24,42,0.22)"></i>Hafta sonu / geçmiş tarih</span>
+            </div>
+          </div>
+
+          <div class="rdv-slots" id="rdvSlots" hidden>
+            <span class="timeline__tag">Saat Seçin (09:00&ndash;18:00)</span>
+            <div class="rdv-slots__grid" id="rdvSlotsGrid"></div>
+          </div>
+        </div>
+
+        <div class="rdv-form-wrap">
+          <div class="rdv-summary" id="rdvSummary">
+            <span class="rdv-summary__label">Seçilen Randevu</span>
+            <strong id="rdvSummaryText">Lütfen takvimden bir tarih ve saat seçin.</strong>
+          </div>
+
+          <form id="appointment-form" novalidate>
+            <div class="form-grid">
+              <div class="field field--full">
+                <label for="af-name">İsim Soyisim *</label>
+                <input type="text" id="af-name" name="name" autocomplete="name" required>
+              </div>
+              <div class="field">
+                <label for="af-phone">Telefon *</label>
+                <input type="tel" id="af-phone" name="phone" autocomplete="tel" required>
+              </div>
+              <div class="field">
+                <label for="af-email">E-posta *</label>
+                <input type="email" id="af-email" name="email" autocomplete="email" required>
+              </div>
+              <div class="field field--full">
+                <label for="af-subject">Randevu Konusu *</label>
+                <select id="af-subject" name="subject" required>
+                  <option value="" selected disabled>Seçiniz</option>
+                  <option>Mimari Tasarım</option>
+                  <option>İç Mimarlık</option>
+                  <option>Proje Yönetimi</option>
+                  <option>Uygulama ve Kontrol</option>
+                  <option>Diğer</option>
+                </select>
+              </div>
+              <div class="field field--full">
+                <label for="af-note">Not (opsiyonel)</label>
+                <textarea id="af-note" name="note" rows="3"></textarea>
+              </div>
+            </div>
+            <button type="submit" class="btn btn--primary" style="margin-top:26px">
+              Randevu Talebini Gönder
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M7 17 17 7M9 7h8v8"/></svg>
+            </button>
+            <p class="form-note" role="status"></p>
+          </form>
+
+          <p class="contact-note">Bu bir randevu <strong>talebidir</strong>; anlık onay içermez. Talebiniz e-posta ile stüdyomuza iletilir, ekibimiz uygunluğu teyit ettikten sonra sizinle iletişime geçer.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <a href="index.html" class="brand">
+          <svg class="brand__mark" viewBox="0 0 200 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22 140 L100 10 L178 140" stroke-width="14"/>
+            <path d="M48 140 L100 42 L152 140" stroke-width="14"/>
+            <path d="M74 140 L100 74 L126 140" stroke-width="14"/>
+          </svg>
+          <span class="brand__word"><span class="brand__name">NİDA</span><span class="brand__sub">MİMARLIK</span></span>
+        </a>
+        <p class="footer__about">Mekânlara değer, yaşama iz. Estetik, işlevsellik ve yaşam kalitesini aynı çizgide buluşturan çağdaş mekânlar tasarlıyoruz.</p>
+        <div class="footer__social">
+          <a href="https://www.instagram.com/nidarch.global/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg>
+          </a>
+          <a href="#" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10.5V17M8 7.5v.01M12.5 17v-4a2.5 2.5 0 0 1 5 0v4M12.5 12v5"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <div class="footer__heading">Kurumsal</div>
+        <ul class="footer__links">
+          <li><a href="hakkimizda.html">Hakkımızda</a></li>
+          <li><a href="hizmetler.html">Hizmetlerimiz</a></li>
+          <li><a href="projeler.html">Projelerimiz</a></li>
+          <li><a href="iletisim.html">İletişim</a></li>
+          <li><a href="randevu.html">Randevu Al</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="footer__heading">Hizmetler</div>
+        <ul class="footer__links">
+          <li><a href="hizmetler.html#mimari-tasarim">Mimari Tasarım</a></li>
+          <li><a href="hizmetler.html#ic-mimarlik">İç Mimarlık</a></li>
+          <li><a href="hizmetler.html#proje-yonetimi">Proje Yönetimi</a></li>
+          <li><a href="hizmetler.html#uygulama-kontrol">Uygulama ve Kontrol</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="footer__heading">İletişim</div>
+        <ul class="footer__contact">
+          <li><a href="mailto:nidamimarlik1@gmail.com">nidamimarlik1@gmail.com</a></li>
+          <li><a href="tel:+902160000000">+90 216 XXX XX XX</a></li>
+          <li>İstanbul, Türkiye</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <span>&copy; <span data-year></span> Nida Mimarlık. Tüm hakları saklıdır.</span>
+      <span>Mekânlara değer, yaşama iz.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+<script src="assets/js/randevu.js"></script>
+</body>
+</html>
